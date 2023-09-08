@@ -1,0 +1,23 @@
+[
+  {
+    "id": "4dc38262-fcf5-4ef9-87dd-9731128f4d48",
+    "name": "PT Cruiser",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "7c0a28f3-bef2-4009-bf0b-ba79c71f8e40",
+    "name": "A4",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "383989d5-da5d-4b3f-8764-fd0c3711b7e4",
+    "name": "Grand Caravan",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]

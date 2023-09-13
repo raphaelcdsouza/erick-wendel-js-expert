@@ -1,17 +1,15 @@
 {
-  "name": "exemplo02",
+  "name": "yargs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx zx index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "safe-regex": "^2.1.1",
-    "zx": "^7.2.3"
+    "yargs": "^17.7.2"
   }
 }

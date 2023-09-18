@@ -9,8 +9,8 @@ const serviceNameDepAnchor = '$$serviceNameDep'
 const repositoryNameDepAnchor = '$$repositoryNameDep'
 
 const template = `
-import $$serviceName from '../service/$$serviceNameDep.js
-import $$repositoryName from '../service/$$repositoryNameDep.js
+import $$serviceName from '../service/$$serviceNameDep.js'
+import $$repositoryName from '../repository/$$repositoryNameDep.js'
 
 export default class $$componentNameFactory {
   static getInstance() {

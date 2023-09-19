@@ -1,12 +1,8 @@
-import Product from "./product.js"
-import { randomUUID as uuid } from 'crypto'
+import Product from "../src/entities/product.js"
 
 export default class Cart {
-  constructor({ at, products }) {
-    this.id = uuid()
-    this.at = at
+  constructor({ products }) {
     this.products = this.removeUndefinedProps(products)
-    this.total = this.getCartPrice()
   }
 
   removeUndefinedProps(products) {
@@ -15,11 +11,5 @@ export default class Cart {
       .map(product => new Product(product))
 
     return JSON.parse(JSON.stringify(productsEntities))
-  }
-
-  getCartPrice() {
-    return this.products
-      .map(product => product.price)
-      .reduce((prev, next) => prev + next, 0)
   }
 }

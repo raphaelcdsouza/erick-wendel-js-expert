@@ -68,7 +68,7 @@ describe('#Routes suite test', () => {
       await routes.handler(...params.values())
 
       expect(params.response.writeHead).toHaveBeenCalledWith(204)
-      expect(params.response.end).toHaveBeenCalledWith('hello world')
+      expect(params.response.end).toHaveBeenCalledWith()
     })
     
     test('given method POST it should choose post route', async () => {
@@ -114,7 +114,7 @@ describe('#Routes suite test', () => {
         }
       ]
 
-      jest.spyOn(routes.fileHelper, routes.fileHelper.getFileStatus.name)
+      jest.spyOn(routes.fileHelper, routes.fileHelper.getFilesStatus.name)
         .mockResolvedValue(filesStatusesMock)
 
       params.request.method = 'GET'

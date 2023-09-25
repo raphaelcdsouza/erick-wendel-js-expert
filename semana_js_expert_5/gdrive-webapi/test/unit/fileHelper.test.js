@@ -4,7 +4,7 @@ import fs from 'fs'
 import FileHelper from '../../src/fileHelper.js'
 
 describe('#FileHelper', () => {
-  describe('#getFileStatus', () => {
+  describe('#getFilesStatus', () => {
     test('it should return files statuses in correct format', async () => {
       const statMock = {
         dev: 16777220,
@@ -37,7 +37,7 @@ describe('#FileHelper', () => {
       jest.spyOn(fs.promises, fs.promises.stat.name)
         .mockResolvedValue(statMock)
 
-      const result = await FileHelper.getFileStatus('/tmp')
+      const result = await FileHelper.getFilesStatus('/tmp')
 
       const expectedResult = [
         {

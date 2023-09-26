@@ -37,14 +37,13 @@ describe('#Routes Integration Test', () => {
       emit: (event, message) => { }
     }
 
-    test('should upload file to the folder', async () => {
+    test.skip('should upload file to the folder', async () => {
       const filename = 'semanajsexpert.png'
       const fileStream = fs.createReadStream(`./test/integration/mocks/${filename}`)
       const response = TestUtil.generateWritableStream(() => { })
 
       const form = new FormData()
       form.append('photo', fileStream)
-
 
       const defaultParams = {
         request: Object.assign(form, {

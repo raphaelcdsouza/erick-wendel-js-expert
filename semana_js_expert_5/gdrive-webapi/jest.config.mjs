@@ -1,3 +1,7 @@
+/*
+ * For a detailed explanation regarding each configuration property, visit:
+ */
+
 export default {
   clearMocks: true,
   restoreMocks: true,
@@ -20,11 +24,8 @@ export default {
   watchPathIgnorePatterns: [
     "node_modules"
   ],
-  transformIgnorePatterns: [
-    "node_modules"
-  ],
+  transformIgnorePatterns: ["node_modules"],
   collectCoverageFrom: [
-    "src/**/*.js",
-    "!src/**/index.js"
-  ]
+    "src/**/*.js", "!src/**/index.js"
+  ],
 };

@@ -43,7 +43,7 @@ export default class DragAndDropManager {
     })
   }
 
-  enableDrop(e) {
+  enableDrop() {
     const drop = (e) => {
       this.dropArea.classList.remove('drop-area')
 
